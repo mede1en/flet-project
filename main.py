@@ -1,4 +1,5 @@
-import flet as ft #as ft укораяивает слово flet
+import flet as ft  
+from datetime import datetime                              #as ft укораяивает слово flet
 
 def app(page: ft.Page):
     # button = ft.Button(content="button")
@@ -18,9 +19,12 @@ def app(page: ft.Page):
         user_input.value= ""
 
         if txt:
+            now = datetime.now()
+            time_str = now.strftime("%Y:%m:%d - %H:%M:%S") 
+
             plane_text.color = None
-            plane_text.value = f"hello {txt}"
-        else
+            plane_text.value = f"{time_str} - Привет, {txt}!"
+        else:
             plane_text.value = f"Введите коррекное имя {user_input.value}"
             plane_text.color = ft.Colors.RED_600
 
@@ -37,7 +41,4 @@ def app(page: ft.Page):
              icon_button)
 
 
-ft.app(app) #view= ft.AppView.WEB_BROWSER -----запуск через браузер
-
-
-# gitignore.io
+ft.app(app)                                             #view= ft.AppView.WEB_BROWSER -----запуск через браузер
