@@ -20,7 +20,7 @@ def app(page: ft.Page):
         if txt:
             plane_text.color = None
             plane_text.value = f"hello {txt}"
-        else:
+        else
             plane_text.value = f"Введите коррекное имя {user_input.value}"
             plane_text.color = ft.Colors.RED_600
 
