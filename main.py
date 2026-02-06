@@ -41,4 +41,6 @@ def app(page: ft.Page):
              icon_button)
 
 
+
+
 ft.app(app)                                             #view= ft.AppView.WEB_BROWSER -----запуск через браузер
